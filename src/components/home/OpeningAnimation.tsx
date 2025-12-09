@@ -86,18 +86,18 @@ function OpeningAnimation({ onComplete }: OpeningAnimationProps) {
                     <div className="mb-1 flex h-6 w-full items-center justify-between bg-indigo-600 px-2">
                       <div className="h-2 w-2 rounded-full bg-white/20" />
                       <span className="text-[8px] font-bold tracking-widest text-white/80">
-                        OFFICIAL
+                        LCYLCY
                       </span>
                     </div>
 
                     <div className="flex flex-1 flex-col items-center justify-center px-2 pb-2 text-center">
                       <span className="mb-1 w-full border-b border-slate-200 pb-1 text-xs font-black tracking-widest text-slate-400">
-                        CONTEST
+                        蛋仔派对
                       </span>
                       <span className="my-1 text-2xl font-black leading-none tracking-tighter text-indigo-800">
-                        CODING
+                        逃出
                         <br />
-                        CREATIVE
+                        惊魂夜
                       </span>
                       <div className="mt-auto flex w-full items-end justify-between">
                         <span className="rounded-sm bg-slate-900 px-1.5 text-[9px] font-bold text-white">
@@ -177,7 +177,7 @@ function OpeningAnimation({ onComplete }: OpeningAnimationProps) {
                   }`}
                 />
                 <span className="origin-left scale-90 text-[9px] font-bold text-slate-500">
-                  PWR
+                  电源
                 </span>
               </div>
               <div className="flex items-center gap-1.5">
@@ -191,7 +191,7 @@ function OpeningAnimation({ onComplete }: OpeningAnimationProps) {
                   }`}
                 />
                 <span className="origin-left scale-90 text-[9px] font-bold text-slate-500">
-                  DAT
+                  数据
                 </span>
               </div>
             </div>
@@ -201,11 +201,11 @@ function OpeningAnimation({ onComplete }: OpeningAnimationProps) {
 
       <div className="absolute bottom-24 h-6 font-mono text-sm tracking-widest text-slate-500">
         {phase === 'reading' && (
-          <span className="animate-pulse text-amber-500">READING DATA...</span>
+          <span className="animate-pulse text-amber-500">加载数据中...</span>
         )}
         {(phase === 'success' || phase === 'exit') && (
           <span className="font-bold text-green-500 transition-all duration-300">
-            SYSTEM READY
+            系统准备就绪
           </span>
         )}
       </div>
