@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
-  AlertCircle,
   CheckSquare,
   Download,
   FileBarChart,
@@ -564,7 +563,6 @@ function AdminPage() {
       document.body.removeChild(link)
       URL.revokeObjectURL(url)
     } catch {
-      // eslint-disable-next-line no-alert
       alert('下载失败，请稍后重试')
     }
   }
@@ -615,7 +613,6 @@ function AdminPage() {
 
       setSelectedIds(new Set())
     } catch {
-      // eslint-disable-next-line no-alert
       alert('打包失败，请稍后重试')
     } finally {
       setIsZipping(false)
@@ -704,4 +701,3 @@ function AdminPage() {
 }
 
 export default AdminPage
-

@@ -119,7 +119,6 @@ function OpeningAnimation({ onComplete }: OpeningAnimationProps) {
               <div className="mb-1 flex h-3 w-32 items-end justify-center gap-1 rounded-sm bg-black/40 px-2 pb-0.5">
                 {Array.from({ length: 12 }).map((_, index) => (
                   <div
-                    // eslint-disable-next-line react/no-array-index-key
                     key={index}
                     className="h-2 w-1.5 rounded-b-[1px] bg-yellow-500 shadow-[0_0_2px_rgba(234,179,8,0.8)]"
                   />
@@ -156,16 +155,15 @@ function OpeningAnimation({ onComplete }: OpeningAnimationProps) {
             </div>
           </div>
 
-          <div className="mt-auto flex h-6 w-full items-center justify-between border-t border-slate-950 bg-slate-900 px-3 shadow-inner">
-            <div className="flex h-full w-20 overflow-hidden opacity-60">
-              {Array.from({ length: 10 }).map((_, index) => (
-                <div
-                  // eslint-disable-next-line react/no-array-index-key
-                  key={index}
-                  className="h-full w-2.5 skew-x-[30deg] border-r border-black/30 bg-yellow-600"
-                />
-              ))}
-            </div>
+              <div className="mt-auto flex h-6 w-full items-center justify-between border-t border-slate-950 bg-slate-900 px-3 shadow-inner">
+                <div className="flex h-full w-20 overflow-hidden opacity-60">
+                  {Array.from({ length: 10 }).map((_, index) => (
+                    <div
+                      key={index}
+                      className="h-full w-2.5 skew-x-[30deg] border-r border-black/30 bg-yellow-600"
+                    />
+                  ))}
+                </div>
 
             <div className="flex items-center gap-4 pr-1">
               <div className="flex items-center gap-1.5">
@@ -220,4 +218,3 @@ function OpeningAnimation({ onComplete }: OpeningAnimationProps) {
 }
 
 export default OpeningAnimation
-

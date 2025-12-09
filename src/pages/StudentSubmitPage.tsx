@@ -6,7 +6,6 @@ import {
   CheckCircle2,
   Cpu,
   FileText,
-  Image as ImageIcon,
   Loader2,
   Pencil,
   Sparkles,
@@ -497,4 +496,3 @@ export function AigcSubmitPage() {
 }
 
 export default StudentSubmitPage
-
